@@ -3,7 +3,6 @@
   animation-name: top;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  transform: translate(0%, 33px) rotateZ(45deg);
   transition: 1s;
   bottom: 1px;
 }
@@ -21,7 +20,7 @@
   animation-name: bottom;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  transform: translate(0%, -33px) rotateZ(-45deg);  transition: 1s;
+  transition: 1s;
 }
 
 nav {
@@ -33,17 +32,17 @@ nav {
   opacity: 1;
 }
 
-/* @keyframes top {
-  from {}
-  to {}
+@keyframes top {
+  from {transform: translatex(0)}
+  to {transform: translate(0%, 33px) rotateZ(45deg)}
 }
 
-@keyframes middle {
+/*@keyframes middle {
   from {}
   to {}
-}
+}*/
 
 @keyframes bottom {
-  from {}
-  to {}
-} */
+  from {transform: translatex(0)}
+  to {transform: translate(0%, -33px) rotateZ(-45deg)}
+}
